@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive With Flexbox</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      h1 {
+        text-align: center;
+      }
+      .item {
+        color: #fff;
+        background: #f4f4f4;
+        border: #ccc 1px solid;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        width: 400px;
+      }
+      .item:nth-child(1) {
+        background: red;
+      }
+      .item:nth-child(2) {
+        background: blue;
+      }
+      .item:nth-child(3) {
+        background: black;
+      }
+      .flex-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Responsive With Flexbox</h1>
+    <div class="flex-container">
+      <div class="item item-1">
+        <h1>Item 1</h1>
+      </div>
+      <div class="item item-2">
+        <h1>Item 2</h1>
+      </div>
+      <div class="item item-3">
+        <h1>Item 3</h1>
+      </div>
+    </div>
+  </body>
+</html>
